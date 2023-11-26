@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="jsapi.css">
+<title>Crypto Rates</title>
+</head>
+<body class="bg">
+    <script src="jsapi.js" defer></script>    
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <div>
+        <div class="container content-justify-center">
+            <h1 style="text-align: center; font-size: 75px;">Cryptomania</h1>
+            <form class="form-inline" name="inputForm" id="inputForm" style ="justify-content:center">
+                <div class="form-group mb-2">
+                    <input type="text" name="season" class="form-control" placeholder="Input crytocurrency coin" id="coinName">
+                </div>
+                
+                <button type="button" class="btn btn-primary mb-2" onclick="getcoin()" style ="justify-content: center; background-color: green">Submit</button>
+            </form>
+
+
+        </div>        
+        
+
+        <table class="container table table-hover table-dark">
+            <thead>
+            <tr style ="text-align: center">
+                <th scope="col" style="color: brown">Coin</th>
+                <th scope="col" style="color: yellow">Price($)</th>
+                <th scope="col" style="color: orange">Currency</th>
+                <th scope="col" style="color: lime">Time(date, time, timezone)</th> 
+                
+            </tr>
+            </thead>
+            <tbody>
+            <tr id="tr1" style ="text-align: center">
+                <th scope="row" style="color: brown" id="coin"></th>
+                <th scope="row" style="color: yellow" id="price"></th>
+                <th scope="row" style="color: orange" id="currency"></th>
+                <th scope="row" style="color: lime" id="timestamp"></th>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>

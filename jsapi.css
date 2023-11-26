@@ -1,0 +1,15 @@
+*{
+    background-color: rgb(13, 9, 47);
+    color: rgb(244, 51, 51);
+}
+
+.bg {
+    
+    background-image: url(cryptosymbols.jpeg);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+  }
+
